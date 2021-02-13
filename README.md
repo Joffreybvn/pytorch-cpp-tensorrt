@@ -10,3 +10,4 @@ PyTorch to TensorRT via ONNX:
 Tensor RT documentation:
 - [Developper guide](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-700/tensorrt-developer-guide/index.html)
 - [Python API](https://docs.nvidia.com/deeplearning/tensorrt/api/python_api/)
+- [C++ API](https://docs.nvidia.com/deeplearning/tensorrt/api/c_api/)
