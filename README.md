@@ -1,3 +1,3 @@
 
-# Python PyTorch model >> C++ ONNX GPU model
+# PyTorch to C++ TensorRT
 
