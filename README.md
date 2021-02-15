@@ -5,6 +5,9 @@ Transformation process of a Python Pytorch GPU model into an optimized TensorRT 
 
 ### Documentaion
 
+HDF5 dataset:
+ - [C++ Installation guide](https://github.com/HDFGroup/hdf5/blob/develop/release_docs/INSTALL)
+
 PyTorch to TensorRT via ONNX:
  - Tutorial: [PyTorch to Onnx TensorRT Python](https://learnopencv.com/how-to-convert-a-model-from-pytorch-to-tensorrt-and-speed-up-inference/)
  - Tutorial: [Onnx to TensorRT Python](https://medium.com/@fanzongshaoxing/accelerate-pytorch-model-with-tensorrt-via-onnx-d5b5164b369)
