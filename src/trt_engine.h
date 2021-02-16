@@ -23,15 +23,19 @@ private:
     std::vector<nvinfer1::Dims> output_dims;
 
     void buildEngine(const std::string& model_path);
+
     void allocateMemory(int batch_size);
     void releaseMemory();
+
+    void preprocessImage(const std::string& image_path);
+    void postProcess(int batch_size);
 
     static size_t getSizeByDim(const nvinfer1::Dims& dims);
 
 public:
 
     explicit TensorRTEngine(const std::string& model_path);
-    void predict();
+    void predict(const std::string& image_path, int batch_size);
 };
 
 

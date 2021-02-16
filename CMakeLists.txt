@@ -14,24 +14,18 @@ add_executable(TensorRTModel
 find_package(Threads)
 find_package(CUDA REQUIRED)
 find_package(HDF5 COMPONENTS C CXX HL REQUIRED)
-find_package(HighFive REQUIRED)
-find_package(xtensor REQUIRED)
-find_package(xtensor-io REQUIRED)
+find_package(OpenCV REQUIRED)
 
 link_directories(${HDF5_LIBRARY_DIRS})
 target_include_directories(TensorRTModel PUBLIC
         ${CUDA_INCLUDE_DIRS}
+        ${OpenCV_INCLUDE_DIRS}
         ${HDF5_INCLUDE_DIRS}
-        ${HighFive_INCLUDE_DIRS}
-        ${xtensor_INCLUDE_DIRS}
-        ${xtensor-io_INCLUDE_DIRS}
 )
 target_link_libraries(TensorRTModel
-        HighFive
-        xtensor
-        xtensor-io
         /usr/lib/x86_64-linux-gnu/libnvinfer.so
         /usr/lib/x86_64-linux-gnu/libnvonnxparser.so
         /usr/local/cuda/targets/x86_64-linux/lib/libcudart.so
         ${HDF5_CXX_LIBRARIES}
+        ${OpenCV_LIBS}
 )
